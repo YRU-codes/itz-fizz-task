@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-const heroTagLines = [
+const heroTagLines : string[] = [
   "little more pop in life",
   "fresh kind of feeling",
   "Bold Bubbles. Bold Energy. Little spark for everyday",
@@ -19,7 +19,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="mt-20 overflow-hidden text-center">
+    <div className=" mt-20 overflow-hidden text-center">
       {heroTagLines.map((tagLine, index) => (
         <h2
           key={tagLine}
